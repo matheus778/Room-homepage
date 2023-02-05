@@ -83,7 +83,7 @@ body {
 .card__discovery {
   width: 100%;
   background-color: var(--white);
-  padding:  0;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -235,9 +235,8 @@ body {
   height: 60px;
   background-color: var(--primary);
   color: var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 2rem;
   font-size: 1.8rem;
   grid-area: attribution;
 
