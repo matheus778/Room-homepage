@@ -46,7 +46,16 @@ btnPrev.addEventListener('click', (event) => {
   else {
     i--;
   }
-  let BgImageParse = `background-image: url('${data[i].image}');`;
+
+  let BgImageParse;
+
+  if (window.screen.width <= 600) {
+    BgImageParse = `background-image: url('${data[i].imageMobile}');`;
+  }
+
+  else {
+    BgImageParse = `background-image: url('${data[i].imageDesktop}');`;
+  }
 
   sliderImage.setAttribute('style', BgImageParse)
   sliderTitle.textContent = data[i].title;

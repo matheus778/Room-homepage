@@ -1,6 +1,11 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .header {
   width: 100%;
-  height: 360px;
+  min-height: 360px;
+  height: 100%;
   background-image: url('../images/mobile-image-hero-1.jpg');
   background-size: cover;
   padding-top: 3rem;
@@ -39,6 +44,27 @@
   visibility: visible;
 }
 
+.header__menu span {
+  width: 0;
+  visibility: hidden;
+}
+
+.header__menu span ul li a {
+  color: var(--white);
+  position: relative;
+  transition: all 1s;
+}
+
+.header__menu span ul li a:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  bottom:  -5px;
+  left:0;
+}
+
 .menu__items {
   display: flex;
   justify-content: space-between;
@@ -60,8 +86,7 @@
 .card__discovery {
   width: 100%;
   background-color: var(--white);
-  padding: 5rem 0;
-
+  padding:  0;
   position: relative;
 }
 
@@ -122,6 +147,10 @@
   width: 90%;
   margin: 0 auto;
   padding: 5rem 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .about__text__card h2 {
@@ -129,4 +158,77 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 2rem;
+}
+
+@media(min-width: 1024px) {
+  body {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header text text"
+    "about about about about"
+    "attribution attribution attribution attribution";
+  }
+
+
+  .header {
+    background-image: url('../images/desktop-image-hero-1.jpg');
+    grid-area: header;
+    background-size:cover;
+ }
+
+  .card__discovery {
+    grid-area: text;
+    height: 100%;
+    padding: 7rem 0;
+  }
+
+  .about__container {
+    grid-area: about;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button__slider {
+  
+    position: absolute;
+    background-color: var(--black);
+    display: flex;
+    bottom: 0;
+    top: unset;
+    left: 0;
+    right: unset;
+  }
+
+  .about__text__card {
+    padding: 2rem;
+  }
+
+  .header__menu span {
+    width: initial;
+    visibility: visible;
+  }  
+
+  .menu__btn_hamburger{
+    display: none;
+  }
+
+  .header__menu {
+    justify-content: start;
+    gap: 5rem;
+  }
+}
+
+.attribution {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  grid-area: attribution;
+
 }
