@@ -44,12 +44,9 @@ body {
   visibility: visible;
 }
 
-.header__menu span {
-  width: 0;
-  visibility: hidden;
-}
 
 .header__menu span ul li a {
+  display: none;
   color: var(--white);
   position: relative;
   transition: all 1s;
@@ -217,6 +214,10 @@ body {
   .header__menu {
     justify-content: start;
     gap: 5rem;
+  }
+
+  .header__menu span ul li a {
+    display: initial;
   }
 }
 
