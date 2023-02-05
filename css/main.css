@@ -5,7 +5,6 @@ body {
 .header {
   width: 100%;
   min-height: 360px;
-  height: 100%;
   background-image: url('../images/mobile-image-hero-1.jpg');
   background-size: cover;
   padding-top: 3rem;
@@ -44,9 +43,10 @@ body {
   visibility: visible;
 }
 
-
-.header__menu span ul li a {
+.header__menu span ul {
   display: none;
+}
+.header__menu span ul li a {
   color: var(--white);
   position: relative;
   transition: all 1s;
@@ -216,7 +216,7 @@ body {
     gap: 5rem;
   }
 
-  .header__menu span ul li a {
+  .header__menu span ul {
     display: initial;
   }
 }
