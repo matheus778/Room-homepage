@@ -13,45 +13,89 @@
 
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
+  <header class="header  slider__image">
+    <div class="header__menu__show">
+      <a href="#" class="menu__btn__close">
+        <img src="./images/icon-close.svg" alt="botão fechar menu">
+      </a>
 
-  Discover innovative ways to decorate
+      <ul class="menu__items">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    
+    </div>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+    <div class="header__menu">
+      <a href="#" class="menu__btn_hamburger">
+        <img src="./images/icon-hamburger.svg" alt="botão para abrir o menu">
+      </a>
 
-  Shop now
+      <a href="#" class="menu__logo">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
 
-  We are available all across the globe
+      <span></span>
+    </div>
+  </header>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+  <section class="card__discovery">
+    <div class="card__discovery__content">
+      <h1 class="slider__title">Discover innovative ways to decorate</h1>
+      <p class="slider__text">
+        We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.
+      </p>
 
-  Shop now
+      <a href="#" class="btn__shop_now">
+        Shop now
+        <img src="./images/icon-arrow.svg">
+      </a>
+    </div>
 
-  Manufactured with the best materials
+    <div class="button__slider">
+      <a href="#" class="btn__prev">
+        <img src="./images/icon-angle-left.svg" >
+      </a>
 
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
+      <a href="#" class="btn__next">
+        <img src="./images/icon-angle-right.svg" >
+      </a>
+    </div>
+  </section>
   
+  <section class="about__container">
+    <img src="./images/image-about-dark.jpg" alt="">
+
+    <div class="about__text__card">
+      <h2>About our furniture</h2>
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+
+    <img src="./images/image-about-light.jpg" alt="">
+  </section>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/menu-toggle.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 </html>

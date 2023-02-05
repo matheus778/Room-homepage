@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  height: 360px;
+  background-image: url('../images/mobile-image-hero-1.jpg');
+  background-size: cover;
+  padding-top: 3rem;
+  position: relative;
+
+  transition: background-image ease-in 800ms;
+}
+
+.header__menu {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu__show {
+  opacity: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  visibility: hidden;
+  transition: all 500ms;
+  transform: translateY(-100px);
+}
+
+.header__menu__show.is_show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu__items li {
+  list-style: none;
+}
+
+.menu__items li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.card__discovery {
+  width: 100%;
+  background-color: var(--white);
+  padding: 5rem 0;
+
+  position: relative;
+}
+
+.card__discovery__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem ;
+  flex-direction: column;
+}
+
+.card__discovery__content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.card__discovery__content p , .about__text__card p{
+  font-size: 1.8rem;
+  line-height: 120%;
+  font-size: 600;
+  color: var(--primary);
+}
+
+.btn__shop_now {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button__slider {
+  position: absolute;
+  width: fit-content;
+  background-color: var(--black);
+  display: flex;
+  top: -6.4rem;
+  right: 0;
+}
+
+.button__slider a {
+  display: flex;
+  padding: 2rem;
+}
+
+.about__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__text__card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.about__text__card h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
