@@ -118,12 +118,16 @@ body {
   color: var(--black);
   font-weight: 600;
   text-decoration: none;
+  transition: opacity 500ms;
+}
+
+.btn__shop_now:hover {
+  opacity: 0.6;
 }
 
 .button__slider {
   position: absolute;
   width: fit-content;
-  background-color: var(--black);
   display: flex;
   top: -6.4rem;
   right: 0;
@@ -132,6 +136,12 @@ body {
 .button__slider a {
   display: flex;
   padding: 2rem;
+  background-color: var(--black);
+  transition: opacity 500ms;
+}
+
+.button__slider a:hover {
+  opacity: 0.6;
 }
 
 .about__container {
@@ -187,10 +197,8 @@ body {
     flex-direction: row;
   }
 
-  .button__slider {
-  
+  .button__slider{
     position: absolute;
-    background-color: var(--black);
     display: flex;
     bottom: 0;
     top: unset;
@@ -217,8 +225,9 @@ body {
   }
 
   .header__menu span ul {
-    display: initial;
+    display: flex;
   }
+
 }
 
 .attribution {
